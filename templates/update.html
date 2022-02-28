@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Todo</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+
+<body>
+  <div class="form">
+
+  <h1>Update Todo!</h1>
+  <h2>Becoming a better persion</h2>
+  <form action="{{url_for('update_item')}}" method="post">
+    <input type="text" name="new_item" id="" value={{todo_item}}><br>
+    <button class="btn-1" type="submit" name="button">Update</button>
+  </form>
+
+  </div>
+</body>
+
+</html>
